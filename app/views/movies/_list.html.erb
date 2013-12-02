@@ -1,0 +1,10 @@
+<% @movies.each do |movie| %>
+  <section>
+    <header>
+      (<b><%= movie.year_released %></b>)
+      <%= movie.title %>
+    </header>
+    <%= movie.description %>
+  </section>
+  <br/>
+<% end %>
