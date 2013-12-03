@@ -1,5 +1,5 @@
 <% if @movie.errors.any? %>
-  <h2>There were errors saving your shirt</h2>
+  <h2>There were errors saving your movie</h2>
   <ul>
     <% @movie.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
