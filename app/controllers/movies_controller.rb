@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  before_action :authenticate_user!, only: [:new, :create]
 
   def index
     @movies = Movie.search_for(params[:q])
